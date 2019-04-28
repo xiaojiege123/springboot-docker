@@ -11,7 +11,9 @@ springboot的dockerfile例子
 2、创建一个TestController测试类，用户在我们部署docker之后访问验证使用
 3、创建Dockerfile文件
 如图：
+
 ![在这里插入图片描述](https://gitee.com/uploads/images/2019/0429/000851_816b0bc2_613422.png)
+
 
 **二、打包和测试**
 1、先单纯的打包工程，验证测试类是否能正常访问
@@ -101,7 +103,9 @@ let'
 2019-04-28 20:22:37.351  INFO 6292 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 24 ms
 ```
 访问浏览器结果，输出OK正常：
+
 ![在这里插入图片描述](https://gitee.com/uploads/images/2019/0429/000849_d8f4e964_613422.png)
+
 2、配置docker主机，开放远程端口
 ```
 # vim编辑docker配置文件/lib/systemd/system/docker.service，并修改ExecStart为下面的内容
@@ -247,7 +251,9 @@ d4e721e41cddc9258f76b21ae8d74eca7238cbabc26b7ff2ba531b25d2d5f0a0
 ```
 7、访问查看结果
 浏览器打开 http://192.168.11.88:2233 查看结果，如下：
+
 ![在这里插入图片描述](https://gitee.com/uploads/images/2019/0429/000854_83c15a5c_613422.png)
+
 成功，完美！
 
 （结束）
